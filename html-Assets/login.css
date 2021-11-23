@@ -102,5 +102,12 @@ form{
 
 
 @media screen and (max-width:900px) {
-  
+  form{
+    width: 350px;
+}
+
+.form-heading{
+  font-size: 1.5rem;
+}
+
 }
