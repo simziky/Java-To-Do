@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css-Assets/login.css" />
+
+    <title>GSE test</title>
+  </head>
+  <body>
+    <div class="content">
+      <!-- Start of FORM section-->
+      <div class="p-form">
+        <form class="" >
+          <div class="form-heading">
+            <h1>Sign up</h1>
+          </div>
+
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            value=""
+            id="name"
+            placeholder="Enter your name..."
+            required
+          />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            value=""
+            id="email"
+            placeholder="Enter your email..."
+            required
+          />
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            value=""
+            id="password"
+            placeholder="Enter your password..."
+            required
+          />
+          <input id="signup" type="submit" name="" value="Sign up" />
+
+          <div class="form-options">
+            <a href="/html-Assets/login.html"><h5>Have an account?</h5></a>
+          </div>
+          <div style="color: red;" class="container error" id="signupError"></div>
+          <div style="color: red;" class="container error" id="signupError2"></div>
+        </form>
+      </div>
+
+      <!-- End of FORM section-->
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyBnijpPy2LCIi5Sd_6Xep-zPp_eNQN6Nzo",
+        authDomain: "to-do-1f3b7.firebaseapp.com",
+        projectId: "to-do-1f3b7",
+        storageBucket: "to-do-1f3b7.appspot.com",
+        messagingSenderId: "1095639247801",
+        appId: "1:1095639247801:web:29b22e9cee6a356fb9a468",
+        measurementId: "G-CYNS3DZ0M3",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+      auth = firebase.auth();
+      db = firebase.firestore();
+    </script>
+    <script src="/html-Assets/Auth.js"></script>
+  </body>
+</html>

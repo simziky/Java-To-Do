@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Begining of section*/
+
+section {
+  background-image: url("/img/protruding-squares.svg");
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+/* Ending of section*/
+
+
+
+        /* Begining of INPUT*/
+                .item-wrapper{
+                    
+                    height: 100px;
+                    width: 400px;
+                    background: black;
+                    margin-top: 50px;
+                    border-radius: 5px;
+                    }
+
+                    #input{
+                   
+                   align-items: center;
+                   align-content: center;
+                   justify-content: center;
+                   text-align: center;
+                    
+                }
+                #input > h1{
+                    font-weight: 700;
+                    font-size: 3rem;
+                    color: white;
+                }
+                 #input >  input{ 
+                   padding: 5px;
+                   border-radius: 5px;
+                   border: none;
+                  outline-color: #1ea858;
+                   width: 50%;
+                }
+                #input >  button{
+                    margin-left: 20px;
+                    padding: 5px;
+                    border-radius: 5px;
+                    color: white;
+                    background: #1ea858;
+                    border: none;
+                    font-weight: 700;
+                    padding: 7px;
+                   transition: 0.5s;
+                }
+                #input >  button:hover{
+
+                    background: #08803a;
+                }
+
+              
+
+        /* Ending of INPUT*/
+
+
+/* Begining of INPUT*/
+#tasks{
+    width: 400px;
+    background:white;
+    margin-top: 50px;
+    border-radius: 5px;
+    text-align: left;
+   padding: 20px;
+   z-index: 20;
+   position: relative;
+    }
+
+
+ /* Ending of INPUT*/
+
+.task{
+    background-color: antiquewhite;
+    height: 50px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid wheat;
+    cursor: pointer;
+}
+.task span{
+    font-weight: 400;
+    font-size: 15px;
+}
+.task > button > img{
+    height: 30px;
+}
+.task > button{
+    border: none;
+    border-radius: 5px;
+    background:rgb(60, 216, 60);
+    cursor: pointer;
+}
+.task > button:hover{
+    background: #00c451;
+}
+
+
+
+.completed{
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+
+
+
+
+                        /* Begining of wave*/
+                        .wave {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        overflow: hidden;
+                        line-height: 0;
+                        transform: rotate(180deg);
+                        }
+
+                        .wave svg {
+                        position: relative;
+                        display: block;
+                        width: calc(100% + 1.3px);
+                        height: 189px;
+                        }
+
+                        .wave .shape-fill {
+                        fill: #1ea858;
+                        }
+
+                        /* Ending of wave*/
