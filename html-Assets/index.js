@@ -5,7 +5,7 @@
         e.preventDefault()
 
         auth.signOut()
-        window.location = "signup.html"
+        window.location = "index.html"
    })
 
 
@@ -89,7 +89,7 @@ const mainContainer = document.getElementById("tasks")
 
         let img = document.createElement("img")
         img.className = "delete";
-        img.src = "/img/delete.png";
+        img.src = "img/delete.png";
         
        
         parentDiv.appendChild(todos);
