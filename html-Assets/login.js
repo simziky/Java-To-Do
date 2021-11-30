@@ -12,7 +12,7 @@ signInBtn.addEventListener('click', (e) => {
     auth.signInWithEmailAndPassword(email, password)
       .then(() => {
         
-        window.location = "index.html"
+        window.location = "home.html"
         console.log(user.email)
       }).catch(err => {
         console.log(err.message);
