@@ -1,5 +1,5 @@
 document.querySelector("#push").onclick = function () {
-  if (document.querySelector("#input input").value.length == 0) {
+  if (document.querySelector(".input-inner input").value.length == 0) {
     alert("please enter your task");
   } else {
     document.querySelector("#tasks").innerHTML += `
@@ -24,7 +24,7 @@ document.querySelector("#push").onclick = function () {
             }
         }
 
-        document.querySelector("#input input").value = "";
+        document.querySelector(".input-inner input").value = "";
   }
 };
 

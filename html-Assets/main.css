@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* Begining of section*/
@@ -10,8 +15,7 @@ section {
   background-image: url("img/protruding-squares.svg");
   height: 100vh;
   width: 100vw;
-  display: flex;
-  justify-content: center;
+  
 }
 
 /* Ending of section*/
@@ -21,8 +25,17 @@ section {
         /* Begining of INPUT*/
                 .item-wrapper{
                     
+                    height: fit-content;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                   align-items: center;
+                    }
+                .item-wrapper-inner{
+                    
                     height: 100px;
-                    width: 400px;
+                    width: 80%;
                     background: black;
                     margin-top: 50px;
                     border-radius: 5px;
@@ -36,19 +49,28 @@ section {
                    text-align: center;
                     
                 }
-                #input > h1{
+                    .input-inner{
+                   margin-top: 20px;
+                   align-items: center;
+                   align-content: center;
+                   justify-content: center;
+                   text-align: center;
+                    
+                }
+                .input-inner > h1{
                     font-weight: 700;
                     font-size: 3rem;
                     color: white;
                 }
-                 #input >  input{ 
+                 .input-inner >  input{ 
+                    height: 35px;
                    padding: 5px;
                    border-radius: 5px;
                    border: none;
                   outline-color: #1ea858;
                    width: 50%;
                 }
-                #input >  button{
+                .input-inner >  button{
                     margin-left: 20px;
                     padding: 5px;
                     border-radius: 5px;
@@ -59,21 +81,24 @@ section {
                     padding: 7px;
                    transition: 0.5s;
                 }
-                #input >  button:hover{
-
+                .input-inner>  button:hover{
+                    cursor: pointer;
                     background: #08803a;
+                    transform: scale(1.3);
                 }
 
               
 
-        /* Ending of INPUT*/
+        /*********** Ending of INPUT***************/
 
 
-/* Begining of INPUT*/
+/******************* Begining of TASKS***************/
 #tasks{
-    width: 400px;
+    width: 600px;
+    height: 200px;
+    max-height: 500px;
     background:white;
-    margin-top: 50px;
+    margin-top: 30px;
     border-radius: 5px;
     text-align: left;
    padding: 20px;
@@ -82,7 +107,7 @@ section {
     }
 
 
- /* Ending of INPUT*/
+ /************ Ending of TASKS ****************/
 
 .task{
     background-color: antiquewhite;
@@ -146,11 +171,16 @@ section {
                         }
 
                         .wave .shape-fill {
-                        fill: #1ea858;
+                        fill: #09371c;
                         }
 
                         /* Ending of wave*/
-
+                        @media screen and (max-width:800px) {
+                            #tasks{
+                                width: 400px;
+                               
+                                }
+                        }
 
                         @media screen and (max-width:500px) {
                             section {
@@ -189,7 +219,7 @@ section {
                                     border-radius: 5px;
                                     }
 
-                                    #input > h1{
+                                    .input-inner > h1{
                                         font-weight: 700;
                                         font-size: 2rem;
                                         color: white;
@@ -198,16 +228,10 @@ section {
 
                                     #tasks{
                                         width: 300px;
-                                        background:white;
-                                        margin-top: 50px;
-                                        border-radius: 5px;
-                                        text-align: left;
-                                       padding: 10px;
-                                       z-index: 20;
-                                       position: relative;
+                                        
                                         }
                                     
-                                        #input >  button{
+                                        .input-inner >  button{
                                             margin-left: 5px;
                                             padding: 5px;
                                             border-radius: 5px;
